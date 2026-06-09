@@ -122,6 +122,7 @@
 //! | smol_str-impl      | Implement `TS` for types from *smol_str*                                                                                                            |
 //! | tokio-impl         | Implement `TS` for types from *tokio*                                                                                                               |
 //! | jiff-impl          | Implement `TS` for types from *jiff*                                                                                                                |
+//! | time-impl          | Implement `TS` for types from *time*                                                                                                                |
 //! | arrayvec-impl      | Implement `TS` for types from *arrayvec*                                                                                                            |
 //! | astrolabe-impl     | Implement `TS` for types from *astrolabe*
 //!
@@ -158,6 +159,8 @@ mod export;
 mod jiff;
 #[cfg(feature = "serde-json-impl")]
 mod serde_json;
+#[cfg(feature = "time-impl")]
+mod time;
 #[cfg(feature = "tokio-impl")]
 mod tokio;
 
